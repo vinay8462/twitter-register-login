@@ -7,11 +7,12 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const dbPath = path.join(__dirname, "twitterClone.db");
 
-db = null;
+app.use(express.json())
+database = null;
 
 const intializeDbAndServer = async () => {
   try {
-    db = await open({
+    database = await open({
       filename: dbPath,
       driver: sqlite3.Database,
     });
