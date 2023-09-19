@@ -12,7 +12,7 @@ Content-Type: application/json
 ###
 
 
-send request
+
 POST http://localhost:3000/login/
 Content-Type: application/json
 
@@ -20,3 +20,63 @@ Content-Type: application/json
   "username":"JoeBiden",
   "password":"biden@123"
 }
+
+###
+
+GET http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
+
+
+####
+
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
+
+####
+
+
+GET http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
+
+
+####
+
+
+GET http://localhost:3000/tweets/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
+
+
+####
+
+GET http://localhost:3000/tweets/4/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
+
+
+###
+
+GET http://localhost:3000/tweets/4/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
+
+###
+
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
+
+
+####
+
+
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
+
+
+{
+   "tweet": "The Mornings..."
+}
+
+
+####
+
+
+DELETE  http://localhost:3000/tweets/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
