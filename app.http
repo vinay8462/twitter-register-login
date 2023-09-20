@@ -21,49 +21,49 @@ Content-Type: application/json
   "password":"biden@123"
 }
 
-###
+###3
 
 GET http://localhost:3000/user/tweets/feed/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
 
 
-####
+####4
 
 GET http://localhost:3000/user/following/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
 
-####
+####5
 
 
 GET http://localhost:3000/user/followers/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
 
 
-####
+####6
 
 
-GET http://localhost:3000/tweets/2/
+GET http://localhost:3000/tweets/10/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
 
 
-####
+####7
 
-GET http://localhost:3000/tweets/4/likes/
+GET http://localhost:3000/tweets/5/likes/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
 
 
-###
+###8
 
 GET http://localhost:3000/tweets/4/replies/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
 
-###
+###9
 
 GET http://localhost:3000/user/tweets/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0NzkxMTE0fQ.ZzvcMImbh65azhSdohT3zsI_vkDrj05XfajVeSm3T4A
 
 
-####
+####10
 
 
 POST http://localhost:3000/user/tweets/
@@ -75,7 +75,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZ
 }
 
 
-####
+####11
 
 
 DELETE  http://localhost:3000/tweets/3/
