@@ -138,8 +138,12 @@ LIMIT 4;`;
 
 app.get("/user/following/", authenticateToken, async (request, response) => {
   let { followingUserId } = request;
-  const selectUserQuery = `SELECT distinct user.username as name FROM user INNER JOIN follower ON user.user_id = follower.follower_id`;
-  const userDetails = await database.all(selectUserQuery);
+  const tweetsQuery = `
+SELECT distinct
+name
+FROM follower INNER JOIN user on user.user_id = follower.follower_user_id`;
+  const userDetails = await database.all(tweetsQuery);
+
   response.send(userDetails);
 });
 
@@ -147,7 +151,7 @@ app.get("/user/following/", authenticateToken, async (request, response) => {
 
 app.get("/user/followers/", authenticateToken, async (request, response) => {
   let { followerUserId } = request;
-  const selectUserQuery = `SELECT distinct user.username as name FROM user INNER JOIN follower ON user.user_id = follower.follower_user_id`;
+  const selectUserQuery = `SELECT distinct name FROM user INNER JOIN follower ON user.user_id = follower.following_user_id`;
   const userDetails = await database.all(selectUserQuery);
   response.send(userDetails);
 });
